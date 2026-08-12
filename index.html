@@ -1,12 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel RPG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marvel RPG</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #151515; }
+    header { display: flex; align-items: center; min-height: 68px; padding: 14px 24px; background: #ed1d24; color: white; box-shadow: 0 2px 7px #0008; position: relative; z-index: 1; }
+    h1 { margin: 0; font-size: 1.65rem; letter-spacing: .04em; text-transform: uppercase; }
+    #map { height: calc(100vh - 68px); min-height: 420px; }
+    .leaflet-popup-content { max-width: 280px; }
+    .leaflet-popup-content dt { font-weight: bold; margin-top: 6px; }
+    .leaflet-popup-content dd { margin: 1px 0 0; }
+    .map-message { background: white; padding: 8px 12px; border-radius: 3px; color: #222; box-shadow: 0 1px 5px #0006; }
+  </style>
 </head>
 <body>
-    <h1>Marvel RPG</h1>
-    <p>this will be a map of the blights in the willow marvel rpg.</p>
+  <header><h1>Marvel RPG</h1></header>
+  <main id="map" aria-label="Marvel RPG map"></main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([40.75, -73.98], 10);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    const sources = [
+      { file: 'mrvl_rpg_nyp.geojson', label: 'New York Parks', color: '#e53935' },
+      { file: 'Mrvl_rpg_KCL.geojson', label: 'Key Comic Locations', color: '#1565c0' },
+      { file: 'Mrvl_RPG_BoI.geojson', label: 'Marvel Points of Interest', color: '#7b1fa2' }
+    ];
+    const overlays = {};
+    const allLayers = [];
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>'"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
+    }
+
+    function popupContent(properties) {
+      const entries = Object.entries(properties || {}).filter(([, value]) => value !== null && value !== '');
+      return entries.length
+        ? '<dl>' + entries.map(([key, value]) => `<dt>${escapeHtml(key)}</dt><dd>${escapeHtml(value)}</dd>`).join('') + '</dl>'
+        : '<p>No details available.</p>';
+    }
+
+    async function loadLayer(source) {
+      const response = await fetch(encodeURI(source.file));
+      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+      const data = await response.json();
+      const layer = L.geoJSON(data, {
+        style: { color: source.color, weight: 2, fillColor: source.color, fillOpacity: .2 },
+        pointToLayer: (feature, latlng) => L.circleMarker(latlng, { radius: 6, color: source.color, fillColor: source.color, fillOpacity: .85, weight: 2 }),
+        onEachFeature: (feature, featureLayer) => featureLayer.bindPopup(popupContent(feature.properties))
+      }).addTo(map);
+      overlays[source.label] = layer;
+      allLayers.push(layer);
+    }
+
+    Promise.allSettled(sources.map(loadLayer)).then(results => {
+      L.control.layers(null, overlays, { collapsed: false }).addTo(map);
+      const bounds = L.featureGroup(allLayers).getBounds();
+      if (bounds.isValid()) map.fitBounds(bounds.pad(0.08));
+      const failures = results.filter(result => result.status === 'rejected');
+      if (failures.length) {
+        const errorControl = L.control({ position: 'bottomleft' });
+        errorControl.onAdd = () => {
+          const message = L.DomUtil.create('div', 'map-message');
+          message.textContent = `${failures.length} layer${failures.length === 1 ? '' : 's'} could not be loaded.`;
+          return message;
+        };
+        errorControl.addTo(map);
+      }
+    });
+  </script>
 </body>
 </html>
