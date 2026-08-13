@@ -1,0 +1,475 @@
+{
+  "type": "FeatureCollection",
+  "name": "Marvel Atlas Project",
+  "description": "An ongoing initiative to map significant Marvel Comics — [click for details]<br><br>Map icons differentiate between locations with strong support from the comics (✔︎) and those with vague or contradictory clues that involve more guesswork (?). Fictional islands and countries have been given secondary indicators that approximate their land boundaries.<br><br>Feedback is welcome! If you see any errors or omissions, drop me a line at agent.of.atlas@icloud.com (Please note that this map reflects the COMIC BOOKS — not the movies).<br><br>Forever indebted to Sean Kleefeld for starting this project so long ago and passing the torch along to me.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alchemax Tower",
+        "description": "Former Oscorp tower, rebranded Alchemax after the merger between Oscorp, Allan Chemical, and Horizon Labs.",
+        "Notes": "Will Sliney’s multiple establishing shots of the Alchemax Building from the Spider-Man 2099 (2014) series place it next to the Carnegie Hall Tower in the position of the Park Hyatt Building.",
+        "styleUrl": "#icon-1769-FF5252-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9790537, 40.7656655, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alias Investigations",
+        "description": "Jessica Jones’ private investigation office",
+        "Notes": "There was little indication of the location of Jessica Jones’ office until Kelly Thompson’s Jessica Jones: Purple Daughter (2019) arc revealed it was in Hell’s Kitchen (as it was in the Netflix television series). Beyond that, this placemark is merely dropped in a part of the city that looks resembles Jessica’s neighborhood (which has changed a bit over the years). It's also above a bar.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9936185, 40.7567603, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ancient One's Temple",
+        "description": "Temple in which Doctor Strange learned the mystic arts from the Ancient One, situated in the mountains above the (fictional) village of Kamar-Taj.",
+        "Notes": "The original origin story from Strange Tales #115 set the temple in India. Since then, accounts place it in Tibet, \"high in the Himalayas.\" This placemark in the disputed Arunchal Province allows both settings to be kind of true, at least until more specific source material comes to light.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [95.8238802, 29.0713778, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Angel's Aerie",
+        "description": "Warren Worthington's mountain retreat that has been used as a de facto headquarters for X-Force and the New Defenders.",
+        "Notes": "Although more recent X-Force accounts mention a vague Colorado location, this location uses the original portrayals from the Dark Phoenix saga (Uncanny X-Men #132), Hulk Annual #7, and Marvel Fanfare #1 which specifically places it in New Mexico, within 100 miles from Gamma Base.\n",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-108.6382592, 33.3009132, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Atlantis",
+        "description": "Capitol city of the Atlantean people.",
+        "Notes": "While Atlanteans live throughout the oceans, the location of their capitol city moves from location to location due to it being a frequent target by various enemies from above and below the sea. The most recent confirmed location as of this writing — Squadron Supreme #13 — describes it being just off the Western Saharan coast. This location puts it just a bit further beyond the Canary Islands.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19.2850388, 27.5174433, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New Attilan",
+        "description": "Home city-state of the Inhumans, built from the ruins of their previous floating city",
+        "Notes": "There has been some variation in the precise size and position of New Attilan since its first appearance in Inhuman #2. The better part of the reference I have position it to statue's right, a bit south of Liberty Island.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.055765, 40.6807566, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Avengers Mansion",
+        "description": "The periodically-destroyed-and-rebuilt headquarters of numerous incarnations of Avengers teams",
+        "Notes": "The Official Handbook of the Marvel Universe #1 places the Avengers Mansion at 890 Fifth Avenue, between 70th and 71st Streets in the position of its real-world inspiration: the Frick Collection art museum.",
+        "styleUrl": "#icon-1769-FF5252-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9672994613647, 40.7713118628433, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Avengers (Stark) Tower",
+        "description": "Stark's second New York tower, built on the site of the Sentry's Watchtower, which functioned as headquarters of Avengers. Destroyed and rebuilt, it was eventually sold to Qeng Enterprises.",
+        "Notes": "Amazing Spider-Man #595 and #700 portray this location on the west side of Columbus Circle near 58th and Broadway.",
+        "styleUrl": "#icon-1769-FF5252-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9830923080444, 40.7685654935657, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Avengers West Coast Compound",
+        "description": "Avengers' west coast facility used as secondary headquarters; later used as training center for Academy students",
+        "Notes": "The Official Handbook of the Marvel Universe: Deluxe Edition #1 places the compound at 1800 Palos Verdes Drive. This location fudges the real-world address just a bit to match the concave coastline portrayed in the comics.",
+        "styleUrl": "#icon-1769-FF5252-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.4208155, 33.771639, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bar With No Name Massacre",
+        "description": "The remote midwestern (not-so-) safehouse in which 18 supervillains were murdered by the Scourge of the Underworld.",
+        "Notes": "In Captain America #320, we learn that the location is somewhere in Medina country, 40 miles from a waterfront warehouse area on the edge of Lake Erie (presumably Cleveland). This placemark takes advantage of a lonely abandoned  building (viewable on Satellite View).",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.1689553, 41.1689144, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baron Zemo's WWII Nazi Base",
+        "description": "Nazi-held island from which Captain America and Bucky were believed KIA after disabling an explosive drone plane",
+        "Notes": "Ed Brubaker's Captain America (2004) #6 clarified decades of inconsistent locations by establishing this event happened on an \"uncharted\" Channel Island. Beyond that, this placemark is meant to be a bit out of the way of shipping lanes.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.2427503, 49.3387222, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baron Zemo's Hidden Fortress",
+        "description": "Heavily fortified castle where Heinrich Zemo died in his showdown with Captain America. Used as a base by the Masters of Evil and was the site where Wonder Man and Eric Josten got their powers.",
+        "Notes": "Early Avengers issues referred to this location as being deep in the Amazon jungle in an almost inaccessible canyon, shown near a river, and below a rocky cliffside. Much later, Avengers: Earth’s Mightiest Heroes #6 identified it as being in Bolivia. The Bala Gorge is an excellent candidate which fits all this criteria.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-67.4945766, -14.5458802, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baxter Building",
+        "description": "Longtime home and headquarters of the Fantastic Four",
+        "Notes": "Though different sources have occasionally cited different locations, the Baxter Building has been established as 42nd Street and Madison Avenue in Midtown since at least Fantastic Four #289.",
+        "styleUrl": "#icon-1769-FF5252-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9797074, 40.7527473, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Braddock Academy",
+        "description": "The birthplace and home of Captain Britain and Psylocke, which has since been converted into a school to train UK superheroes.",
+        "Notes": "The Official Handbook of the Marvel Universe: X-Men 2005 indicates that Captain Britain was born at Braddock Manor in Maldon, England. This placemark is positioned to reflect the portrayals of the manor which consistently depict a countryside landscape.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0.6631958, 51.7308286, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Braddock Lighthouse",
+        "description": "Brian Braddock's lighthouse home which serves as base for Excalibur.",
+        "Notes": "Although recent comics — Excalibur (2019) #2 — places this in Cornwall, there is an abundance of prior instances placing the lighthouse on the west coast of England on the Celtic Sea. The most exacting of these is Excalibur #49 (1992) by Alan Davis actually pinpoints this location on a map of the UK.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.1033778, 53.5491591, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brooklyn Visions Academy",
+        "description": "The charter school that Miles Morales attends with his friend Ganke",
+        "Notes": "This placemark uses the location depicted on the subway map from Miles Morales: Spider-Man #4 (2019), on Avenue U, roughly midway between the subway stop and Marine Park.",
+        "styleUrl": "#icon-1769-FF5252-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9464872, 40.6000351, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Broxton, Oklahoma",
+        "description": "Small rural town a half-mile from where Thor raised a new Asgard on Earth",
+        "Notes": "Thor (2007) #2 shows a weather forecast map indicating Thor's activity over the real-world town of Broxton.",
+        "styleUrl": "#icon-1769-FF5252-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-98.4100342, 34.9859876, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camp Hammond",
+        "description": "The superhuman training facility used by the 50-State Initiative in the wake of the Stamford tragedy and the Superhuman Registration Act\n",
+        "Notes": "Said to be built on the site of the Stamford explosion — which occurred near an elementary school in a residential neighborhood. The Marvel Atlas notes that Camp Hammond is “located on the ‘Gold Coast’ of Connecticut’s Fairfield County and within a short drive to the Lodge Turnpike (US I-95).”",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.5474148, 41.0576867, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cape Canaveral",
+        "description": "The space program headquarters infiltrated by Mar-Vell, arousing the suspicion of Security Chief Carol Danvers. (It's also likely that this NASA / Air Force complex is also technically the \"Cape Citadel\" location in which the X-Men first faced off against Magneto)",
+        "Notes": "Based on real-world location",
+        "styleUrl": "#icon-1769-FF5252-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.6525051, 28.5839822, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Captain America's Building",
+        "description": "The home and base of operations of Captain America.",
+        "Notes": "Captain America's residence has been portrayed as being just north of the Brooklyn Bridge in DUMBO since the beginning of Ed Brubaker's run in 2004",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9922402, 40.7034581, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Captain America in suspended animation",
+        "description": "Location where the frozen body of Captain America was discovered by Namor in the modern era",
+        "Notes": "Chose vicinity of Ittoqqortoormiit as a remote location with Inuit presence that ocean currents *could* have taken an iceblock by way of the North Sea.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-21.720661, 70.4370038, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Captain Marvel's Base",
+        "description": "Captain Marvel's underwater base off the pier of her family's summer home.",
+        "Notes": "Captain Marvel (2019) #9 set Carol’s secret base off the pier of the Danvers summer home — which the Life of Captain Marvel miniseries placed the Danvers summer home in the Harpswell Sound area. The exact location is a little vague with the view across the sound changing from issue to issue, but this location selects a house off a road that runs parallel to the shoreline as portrayed in Life of Captain Marvel #1",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-69.965558, 43.7856089, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cassidy Keep",
+        "description": "Ancestral home of the sonic mutant Sean Cassidy (Banshee) and his daughter Theresa",
+        "Notes": "Located on a rocky cliffside in County Mayo. Uncanny X-Men #101 notes that as one heads west from Dublin, they detrain in Balina and continue on to the coast. Classic X-Men #16 shows Banshee crosses Donegal Bay from Northern Ireland to reach the castle, suggesting it's on the northern coast of the county.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-9.2144668, 54.2876631, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Castle Family Murders",
+        "description": "Site of the murder of Frank Castle's family after having stumbled upon a gang execution.",
+        "Notes": "Frank’s family was killed in a Central Park broad and open enough for his son to fly his kite, yet secluded enough for a gang to execute someone in broad daylight. Punisher War Journal #1 (1988) shows Frank preparing for his memorial visit to the location from his West Side safehouse, which he says is close to Harlem. So I narrowed my focus to the upper west side of the park. As it turns out, there is a clearing almost entirely surrounded by trees that fits the description really well. Someone even created a panoramic Street View photo sphere from within the space if you view the location on Google Maps.\n",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.957842, 40.7959713, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Centerville, California",
+        "description": "Hometown of Patsy Walker, aka Hellcat",
+        "Notes": "The real world Centerville is not as populated as its comic book counterpart, but it exists nonetheless.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.4965821, 36.7335241, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chaparanga Beach",
+        "description": "Graveyard for decommissioned interstellar spaceships that are eventually cut up and sold for scrap.",
+        "Notes": "The only details regarding the location of Chaparanga is that it is in Indonesia.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.581645, -4.2134611, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "City of the Space Gods",
+        "description": "Ancient Incan system of temples that pay tribute to the Celestials and the site of the Fourth Host",
+        "Notes": "Frequently described to be a secreted away on the high plains of the Andes Mountains in Peru.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.1401957, -15.0090736, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Clinton Mission Shelter / Saint Anne's Church",
+        "description": "Sister Maggie’s church and shelter where Daredevil recuperated after an attack by the Kingpin as well as the site of Karen Page’s murder.",
+        "Notes": "Cited as being in Hell’s Kitchen since first appearance. This placemark takes advantage of a real Catholic Church on a Hell’s Kitchen side-street.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9903509, 40.7650669, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coffee Bean",
+        "description": "Coffee shop frequented by Empire State University students",
+        "Notes": "Although earlier Handbook maps specify the Coffee Bean was previously in the East Village, Amazing Spider-Man #674 not only nails down the 8th & Astor location, but implies this has been the same location since Pete's college days.",
+        "styleUrl": "#icon-1769-FF5252-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9915734, 40.7300404, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cooterman's Creek",
+        "description": "An abandoned mining town adopted as a base of operations for the Reavers, and then by the X-Men for a period",
+        "Notes": "Though Uncanny X-Force #5.1 marked the Reaver's old base as being in North Central Australia, the most specific account comes from X-Men v2 #44, specifying its about 200 miles southeast of Lake Disappointment in the Gibson Desert. Given that there are rusty old automobiles shown at this place, its reasonable to place it along a road, and in this case, Gunbarrel Highway intersects across a semi-dry creek bed almost exactly 200 miles southeast from Lake Disappointment.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [125.6904307, -25.6971835, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Daily Bugle",
+        "description": "After the demolition of their longtime building, the relaunched Daily Bugle set up shop in the ground floor of an office building.",
+        "Notes": "Apart from general references to being in Midtown, the best indication to date is a mention that the Flatiron Building is equidistant between the Daily Bugle, the Holland Tunnel, and a SoHo spa. That would suggest the Bugle is in this general vicinity.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9646816, 40.7597508, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Damage Control",
+        "description": "Headquarters of the construction company specializing in repairing property damage caused by superhuman battle.",
+        "Notes": "Numerous depictions of Damage Control's headquarters in the Flatiron Building",
+        "styleUrl": "#icon-1769-FF5252-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9896806, 40.7410181, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Department H",
+        "description": "Headquarters of the governmental department assigned to training Wolverine and the formation of Alpha Flight",
+        "Notes": "Multiple references to the department operating out of Parliament Hill",
+        "styleUrl": "#icon-1769-FF5252-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.6998597, 45.4251351, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Doctor Doom's Monastery",
+        "description": "The temple dwelling of the monks that assisted Doctor Doom with his original armor.",
+        "Notes": "Brubaker’s Books of Doom series featured Doom coming down from the mountain to a village with children asking for Rupees, currency of Nepal, India, and Pakistan; helping to narrow down the possible remote Himalayan mountain position of this location.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [83.3922987, 28.7466241, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Empire State University",
+        "description": "The college university attended by numerous individuals, including: Peter Parker, Reed Richards, Ben Grimm, Victor Von Doom, Emma Frost, Eddie Brock, Flash Thompson, Felicia Hardy, Kevin Conner, and Doreen Green.\n",
+        "Notes": "It’s a little tricky reconciling the compact, walled-in ESU campus with its real-world counterpart: NYU, which has a nebulous, urban campus open to the rest of the city. Adding to the complications is that the various editions of the Official Handbooks place ESU in the East Village, closer to Tompkins Park. But it feels wrong to divorce ESU from its counterpart NYU and Washington Square Park, so the best compromise I could devise is specifying a rectangular area adjacent to Washington Square to the south, which overlaps a sufficient portion of the real world college grounds.",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9973378, 40.7280819, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fact Channel Studios",
+        "description": "Location of cable news network, where both J. Jonah Jameson and Cindy Moon (Silk) had worked.",
+        "Notes": "Based off the original portrayal of the location, which showed the exterior of the ABC Times Square studios (though later portrayals showed a generic building in Midtown).",
+        "styleUrl": "#icon-1594-757575-labelson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9855975, 40.7568729, 0.0]
+      }
+    }
+  ]
+}
