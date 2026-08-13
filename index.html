@@ -15,6 +15,19 @@
     .leaflet-popup-content { max-width: 280px; }
     .leaflet-popup-content dt { font-weight: bold; margin-top: 6px; }
     .leaflet-popup-content dd { margin: 1px 0 0; }
+    .building-label {
+      background: rgba(21, 21, 21, .88);
+      border: 1px solid #7b1fa2;
+      border-radius: 3px;
+      box-shadow: none;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 5px;
+      text-shadow: 0 1px 2px #000;
+      white-space: nowrap;
+    }
+    .building-label::before { border-top-color: #7b1fa2; }
     .map-message { background: white; padding: 8px 12px; border-radius: 3px; color: #222; box-shadow: 0 1px 5px #0006; }
   </style>
 </head>
@@ -33,7 +46,7 @@
     const sources = [
       { file: 'mrvl_rpg_nyp.geojson', label: 'New York Parks', color: '#e53935' },
       { file: 'Mrvl_rpg_KCL.geojson', label: 'Known Character Hangouts', color: '#1565c0' },
-      { file: 'mrvl_building_Locations.geojson', label: 'Marvel Points of Interest', color: '#7b1fa2' }
+      { file: 'mrvl_building_Locations.geojson', label: 'Marvel Points of Interest', color: '#7b1fa2', labels: true }
     ];
     const overlays = {};
     const allLayers = [];
@@ -56,7 +69,17 @@
       const layer = L.geoJSON(data, {
         style: { color: source.color, weight: 2, fillColor: source.color, fillOpacity: .2 },
         pointToLayer: (feature, latlng) => L.circleMarker(latlng, { radius: 6, color: source.color, fillColor: source.color, fillOpacity: .85, weight: 2 }),
-        onEachFeature: (feature, featureLayer) => featureLayer.bindPopup(popupContent(feature.properties))
+        onEachFeature: (feature, featureLayer) => {
+          featureLayer.bindPopup(popupContent(feature.properties));
+          if (source.labels && feature.properties?.name) {
+            featureLayer.bindTooltip(escapeHtml(feature.properties.name), {
+              permanent: true,
+              direction: 'top',
+              offset: [0, -6],
+              className: 'building-label'
+            });
+          }
+        }
       }).addTo(map);
       overlays[source.label] = layer;
       allLayers.push(layer);
@@ -80,3 +103,4 @@
   </script>
 </body>
 </html>
+
